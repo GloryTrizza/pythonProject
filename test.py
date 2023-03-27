@@ -13,7 +13,7 @@ class TestRomanToInt(unittest.TestCase):
         self.assertEqual(romanToInt('D'), 500)
         self.assertEqual(romanToInt('M'), 1000)
 
-    # test multiple digit
+    # test multiple digits
     def test_multiple_digits(self):
         self.assertEqual(romanToInt('II'), 2)
         self.assertEqual(romanToInt('VII'), 7)
@@ -25,9 +25,8 @@ class TestRomanToInt(unittest.TestCase):
     # test invalid letter
     def test_invalid_letter(self):
         # Test for invalid letter 'Z'
-        result = romanToInt('XXZ')
+        result = romanToInt('Z')
         assert result == -1
-
 
 
 

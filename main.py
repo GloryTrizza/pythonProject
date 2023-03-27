@@ -17,14 +17,14 @@ def romanToInt(s: str) -> int:
         # if the current Roman numeral is less than the next one, subtract its value
         if i < len(s) - 1 and roman_dict[s[i]] < roman_dict[s[i+1]]:
             result -= roman_dict[s[i]]
-        # if the current Roman numeral is less than the next one, add its value
+        # if the current Roman numeral is MORE than the next one, add its value
         else:
             result += roman_dict[s[i]]
     return result
 
 
 # calling the result
-result = romanToInt('XX')
+result = romanToInt('Z')
 print(result)
 
 
